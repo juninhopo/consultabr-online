@@ -28,7 +28,6 @@ h1 {
   font-weight: bold;
 }
 .container-ceps {
-  background: whitesmoke;
   color: black;
   display: flex;
   align-items: center;
@@ -47,14 +46,16 @@ h1 {
   weight: 500px;
   text-align: center;
   height: 100%;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
   border: 1px solid black;
+  margin-right: 5px;
 }
 .container-viacep {
   background: #f7d802;
   width: 50%;
   text-align: center;
   height: 100%;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
   border: 1px solid black;
+  margin-left: 5px;
 }
