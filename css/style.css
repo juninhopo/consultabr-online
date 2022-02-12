@@ -1,11 +1,13 @@
 body {
-  background: #37e51b;
+    background: #36e51a;
 }
 h1 {
   font-family: monospace;
+  color: black;
   font-size: 50px;
   text-align: center;
   font-weight: bold;
+  text-decoration: border 2px;
 }
 .container-input-button {
   display: flex;
@@ -27,6 +29,7 @@ h1 {
 }
 .container-ceps {
   background: whitesmoke;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-around;
