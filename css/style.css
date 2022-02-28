@@ -1,14 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   outline: none;
 }
 
-body{
-  background: #5352ED;
+a{
+  text-decoration: none;
+  color: #20262A;
+}
+
+span{
+  color: rgb(102, 204, 19);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+
+.container-ul{
+  list-style: none;
+  display: flex;
+}
+
+.container-li{
+  padding: 8px;
+}
+
+.container-a{
+  color: #20262A;
+  transition: 0.4s;
+}
+
+.container-a:hover{
+  color: #3baa0f;
+}
+
+.container h1{
+
+  transition: 0.4s ease-in-out;
+}
+
+.container h1:hover{
+  transform: scale(1.2);
+}
+
+.card{
+  width: 30%;
+  height: 200px;
+  background: #20262A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+.card-content{
+  color: #ffffffaf;
+}
+
+.card-content h3{
+  width: 30%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(102, 204, 19, 0.616);
+}
+
+.card-content p{
+  display: flex;
+  align-items: center;
+}
+
+.card-content ion-icon{
+  padding-right: 8px;
+  color: #3baa0f;
+}
+
+.card span{
+  padding-right: 2rem;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  margin-top: 5rem;
 }
