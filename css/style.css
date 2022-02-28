@@ -1,60 +1,14 @@
-body {
-    background: #36e51a;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
 }
-h1 {
-  font-family: monospace;
-  color: black;
-  font-size: 50px;
-  text-align: center;
-  font-weight: bold;
-  text-decoration: border 2px;
-}
-.container-input-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.input-cep {
-  border: 1px solid;
-  border-radius: 5px;
-}
-.button-send-cep {
-  border: 1px solid;
-  border-radius: 5px;
-  margin-left: 10px;
-  font-family: monospace;
-  font-size: 15px;
-  text-align: center;
-  font-weight: bold;
-}
-.container-ceps {
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 40px;
-  border-radius: 10px;
-  height: 300px;
-  font-family: monospace;
-  font-size: 22px;
-  text-align: center;
-  font-weight: bold;
-}
-.container-correios {
-  background: #f7d802;
-  width: 50%;
-  text-align: center;
-  height: 100%;
-  border-radius: 10px 10px 10px 10px;
-  border: 1px solid black;
-  margin-right: 5px;
-}
-.container-viacep {
-  background: #f7d802;
-  width: 50%;
-  text-align: center;
-  height: 100%;
-  border-radius: 10px 10px 10px 10px;
-  border: 1px solid black;
-  margin-left: 5px;
+
+body{
+  background: #5352ED;
 }
