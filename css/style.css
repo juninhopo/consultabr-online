@@ -143,5 +143,25 @@ body{
 }
 
 .content-input{
-  
+  border-radius: 4px;
+  border: 1px solid #973ae4;
+  background: none;
+}
+
+.content-input input{
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 4px;
+  padding: 1rem 5rem;
+  color: #fff;
+}
+
+.content-input button{
+  width: 90px;
+  height: 50px;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  border: none;
 }
