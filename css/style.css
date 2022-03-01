@@ -40,12 +40,41 @@ header{
 
 .header-right a{
     text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.header-right a:hover{
+  color: var(--hue);
 }
 
 #menu-hamburgue{
     display: none;
 }
 
+.menu-overlay{
+  background: rgba(67, 90, 111, 0.7);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-overlay-cima{
+
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-overlay-cima button{
+  background: transparent;
+  border: none;
+}
 
 
 @media only screen and (max-width: 600px) {
