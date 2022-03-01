@@ -179,6 +179,10 @@ body{
 .container-ads{
   width: 75%;
   height: 150px;
+<<<<<<< HEAD
   margin-bottom: 100px;
   background-color: #20262b;
+=======
+  background-color: rgb(168, 168, 168);
+>>>>>>> 232fd1447d258ae2d1ac45d88aa59cbeec7e7694
 }
