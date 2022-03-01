@@ -1,0 +1,14 @@
+<div class="content-input">
+    <input id="bankinput" type="text" name="number" placeholder="Digite o ISPB do Banco" maxlength="3" minlength="1">
+    
+    <button type="submit" onclick="getBank()">Pesquisar</button>
+</div>
+
+<div id="responseSubmit" class="container-baixo">
+    <span id="ispb"></span>
+    <span id="name"></span>
+    <span id="code"></span>
+    <span id="fullname"></span>
+</div>
+
+<script src="../controllers/consulta-bank.js"></script>
