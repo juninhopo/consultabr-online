@@ -1,8 +1,5 @@
-# confira-cep
-
-
-Page utilizada para realizar consultas de CEP.
-
+# consulta-br
+- Utilizada para consultas em geral de nossos queridos Brasileiros.
 
 
 ## Esse projeto foi feito por:
