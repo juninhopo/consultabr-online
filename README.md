@@ -1,8 +1,5 @@
-# confira-cep
-
-
-Page utilizada para realizar consultas de CEP.
-
+# consulta-br
+- Utilizada para consultas em geral de nossos queridos Brasileiros.
 
 
 ## Esse projeto foi feito por:
@@ -16,3 +13,9 @@ Page utilizada para realizar consultas de CEP.
 
 
 APIs fornecidas -> https://brasilapi.com.br/docs
+
+
+#### New Features
+
+- Fast - https://fast.com/pt/ - Verificar velocidade da internet
+- Meu IP - http://www.meuip.com.br/tools-geo - Verificar qual IP da maquina
