@@ -19,4 +19,4 @@ APIs fornecidas -> https://brasilapi.com.br/docs
 
 - Fast - https://fast.com/pt/ - Verificar velocidade da internet
 - Meu IP - http://www.meuip.com.br/tools-geo - Verificar qual IP da maquina
-- Codigo bancario nao encontrado - Subir if caso retorne 404
+- Codigo bancario nao encontrado - Subir if caso retorne 404 - bank.html
