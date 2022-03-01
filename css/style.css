@@ -64,7 +64,6 @@ header{
 }
 
 .menu-overlay-cima{
-
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -73,6 +72,8 @@ header{
 
 .menu-overlay-cima button{
   background: transparent;
+  z-index: 1000;
+
   border: none;
 }
 
