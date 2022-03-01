@@ -175,10 +175,3 @@ body{
   display: none;
   flex-direction: column;
 }
-
-.container-ads{
-  width: 75%;
-  height: 150px;
-  margin-bottom: 100px;
-  background-color: #20262b;
-}
