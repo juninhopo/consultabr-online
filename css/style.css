@@ -10,11 +10,11 @@
 
 a{
   text-decoration: none;
-  color: #20262A;
+  color: #fff;
 }
 
 span{
-  color: rgb(102, 204, 19);
+  color: rgb(115, 19, 204);
 }
 
 main{
@@ -22,6 +22,10 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body{
+ background: #0f0f0f;
 }
 
 #header{
@@ -52,12 +56,12 @@ main{
 }
 
 .container-a{
-  color: #20262A;
+  color: #fff;
   transition: 0.4s;
 }
 
 .container-a:hover{
-  color: #3baa0f;
+  color: rgb(115, 19, 204);
 }
 
 .container h1{
@@ -82,10 +86,6 @@ main{
   padding: 0 2rem;
 }
 
-.card:hover{
-  transform: scale(1.1);
-}
-
 .card-content{
   width: 100%;
   color: #ffffffaf;
@@ -107,7 +107,12 @@ main{
   text-overflow: ellipsis;
   align-items: center;
   justify-content: center;
-  background: rgba(102, 204, 19, 0.616);
+  background: rgb(115, 19, 204);
+  transition: 0.4s;
+}
+
+.card-content a:hover{
+  background: #973ae4;
 }
 
 .card-content p{
