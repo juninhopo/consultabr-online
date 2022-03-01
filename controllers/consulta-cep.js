@@ -1,22 +1,13 @@
-let cep = document.querySelector('#cep');
-let rua = document.querySelector('#rua');
-let bairro = document.querySelector('#bairro');
-let cidade = document.querySelector('#cidade');
-let estado = document.querySelector('#estado');
- 
-cep.value = '01001000'
+async function getCep(cep) {
+    const cepInput = document.getElementById("cepinput")
 
-cep.addEventListener('blur', function(e) {
-    let cep = e.target.value
-    let script = document.createElement('script')
-    script.src = 'viacep.com.br/ws/01001000/json/?callback=popularForm'
-    document.body.appendChild(script)
-})
+    await fetch(`https://brasilapi.com.br/api/cep/v2/${cepInput.value}`, {
+        method: 'GET',
+        mode: "cors",
+    }).then(res => res.json().then(res => {
+        document.body.innerHTML = res.cep
 
-function popularForm(resposta) {
-    rua.value = resposta.logradouro
-    bairro.value = resposta.bairro
-    cidade.value = resposta.cidade
-    estado.value = resposta.estado
-
+        console.log(res)
+    }))
+    
 }
