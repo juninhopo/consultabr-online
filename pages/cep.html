@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Consulta</title>
+    <title>ConsultaBR</title>
 </head>
+
 <body>
     <header id="header">
         <nav class="container">
-            <a href="../index.html"><h1>Consulta<span>BR</span></h1></a>
+            <a href="../index.html">
+                <h1>Consulta<span>BR</span></h1>
+            </a>
             <ul class="container-ul">
                 <li class="container-li"><a class="container-a" href="../index.html">início</a></li>
                 <li class="container-li"><a class="container-a" href="documentario.html">Documentário</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <form action="">
-                <input type="text">
-                <button type="submit">Enviar</button>
-            </form>
-
-        </div>
-    </main>
+    <section>
+            <div class="content-1">
+                <div class="container-text-cep">
+                    <div class="container-text-1">
+                        <h1>CEP</h1>
+                        <P>Busca por CEP com múltiplos providers de fallback.</P>
+                    </div>
+                    <div class="content-input">
+                        <input type="text" name="text" placeholder="Digite um CEP">
+            
+                        <button>Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <script src="../controllers/api-cep.js"></script>
 
