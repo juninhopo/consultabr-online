@@ -10,29 +10,19 @@
 
 </head>
 <body>
-    <div id="overlay" class="menu-overlay" >
-        <div class="menu-overlay-cima">
-            <button onclick="overlayHander(true)">
-                <img width="50px" src="./img/overlay-fechar.png" alt="close-menu">
+    <header id="header">
+        <h1>Consulta<span>BR</span></h1>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false">
+
+                <span id="hamburguer"></span>
             </button>
-        </div>
-        <div class="menu-overlay-baixo"></div>
-    </div>
-    <header>
-        <div class="header-left">
-            <h1>Consulta<span>BR</span></h1>
-        </div>
-        <nav class="header-right">
-            <ul>
-                <li>
-                    <a href="">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Documentario</a>
-                </li>
+            <ul id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Documentario</a></li>
             </ul>
         </nav>
-        <img onclick="overlayHander(false)" id="menu-hamburgue" src="https://img.icons8.com/material-outlined/24/000000/menu--v3.png"/>
     </header>
 <script src="./controllers/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
