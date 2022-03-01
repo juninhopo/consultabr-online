@@ -6,7 +6,7 @@ async function getCep(cep) {
         mode: "cors",
     }).then(res => res.json().then(res => {
         document.body.innerHTML = res.cep
-
+        
         console.log(res)
     }))
     
