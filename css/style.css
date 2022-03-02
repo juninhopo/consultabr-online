@@ -43,18 +43,22 @@ a{
   box-sizing: border-box;
   height: 70px;
   padding: 1rem;
+  user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--fundo);
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #menu{
   display: flex;
   list-style: none;
   gap: .5rem;
-  
 }
 
 #btn-mobile{
@@ -67,6 +71,7 @@ a{
   align-items: center;
   gap: 2rem;
   margin-top: 5rem;
+  user-select: none;
 }
 
 .content-card{
@@ -112,6 +117,7 @@ a{
   background: none;
   border-radius: 4px;
   color: #fff;
+  font-size: 16px;
   border: 1px solid rgb(104, 150, 52);
 }
 
@@ -207,6 +213,10 @@ a{
     margin-bottom: 5rem;
   }
 
+  .content-input input, button{
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 1300px) {
@@ -215,7 +225,7 @@ a{
   }
 
   .container-cep-infos{
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 }
