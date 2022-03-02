@@ -158,6 +158,13 @@ a{
   .container{
     flex-direction: column;
     margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
+}
+
+@media (max-width: 1300px) {
+  .container{
+    flex-wrap: wrap;
+  }
 }
