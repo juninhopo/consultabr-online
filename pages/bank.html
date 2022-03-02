@@ -29,21 +29,32 @@
         </nav>
     </header>
     <main>
-
-        <div class="content-input">
-            <input id="bankinput" type="text" name="number" placeholder="Digite o ISPB do Banco" maxlength="3"
-                minlength="1">
-
-            <button type="submit" onclick="getBank()">Pesquisar</button>
-        </div>
-
-        <div id="responseSubmit" class="container-baixo">
-            <span id="ispb"></span>
-            <span id="name"></span>
-            <span id="code"></span>
-            <span id="fullname"></span>
-        </div>
+        <section>
+            <div class="container">
+                <div class="content-container-cep">
+                    <div class="content-container-cep-text">
+                        <h1>Consulta BANCO</h1>
+                        <p>Encontre informações de um determinado BANCO (Bancos internacionais 
+                            nacionais).
+                        </p>
+                    </div>
+                    <div class="content-input">
+                        <input id="bankinput" type="text" name="number" placeholder="Digite o ISPB do Banco" maxlength="3"
+                            minlength="1">
+                    
+                        <button type="submit" onclick="getBank()">Pesquisar</button>
+                    </div>
+                    
+                    <div id="responseSubmit" class="container-cep-infos">
+                        <span id="ispb"></span>
+                        <span id="name"></span>
+                        <span id="code"></span>
+                        <span id="fullname"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
     <script src="../controllers/consulta-bank.js"></script>
 </body>

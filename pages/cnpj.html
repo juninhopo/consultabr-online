@@ -29,31 +29,41 @@
         </nav>
     </header>
     <main>
-        <div class="content-input">
-            <input id="cnpjinput" type="text" name="number" placeholder="Digite o CNPJ" maxlength="14" minlength="14">
-
-            <button type="submit" onclick="getCnpj()">Pesquisar</button>
-        </div>
-
-        <div id="responseSubmit" class="container-cep-infos">
-            <span id="cnpj"></span>
-            <span id="razao_social"></span>
-            <span id="nome_fantasia"></span>
-            <span id="descricao_situacao_cadastral"></span>
-            <span id="data_inicio_atividade"></span>
-            <span id="cnae_fiscal"></span>
-            <span id="cnae_fiscal_descricao"></span>
-            <span id="descricao_tipo_logradouro"></span>
-            <span id="logradouro"></span>
-            <span id="numero"></span>
-            <span id="complemento"></span>
-            <span id="bairro"></span>
-            <span id="cep"></span>
-            <span id="uf"></span>
-            <span id="municipio"></span>
-            <span id="ddd_telefone_1"></span>
-            <span id="ddd_telefone_2"></span>
-        </div>
+        <section>
+            <div class="container">
+                <div class="content-container-cep">
+                    <div class="content-container-cep-text">
+                        <h1>Consulta CNPJ</h1>
+                        <p>Encontre informações de um determinado CNPJ (Cadastro Nacional da Pessoa Jurídica).
+                        </p>
+                    </div>
+                    <div class="content-input">
+                        <input id="cnpjinput" type="text" name="number" placeholder="Digite o CNPJ" maxlength="14" minlength="14">
+                    
+                        <button type="submit" onclick="getCnpj()">Pesquisar</button>
+                    </div>
+                    <div id="responseSubmit" class="container-cnpj-infos">
+                        <span id="cnpj"></span>
+                        <span id="razao_social"></span>
+                        <span id="nome_fantasia"></span>
+                        <span id="descricao_situacao_cadastral"></span>
+                        <span id="data_inicio_atividade"></span>
+                        <span id="cnae_fiscal"></span>
+                        <span id="cnae_fiscal_descricao"></span>
+                        <span id="descricao_tipo_logradouro"></span>
+                        <span id="logradouro"></span>
+                        <span id="numero"></span>
+                        <span id="complemento"></span>
+                        <span id="bairro"></span>
+                        <span id="cep"></span>
+                        <span id="uf"></span>
+                        <span id="municipio"></span>
+                        <span id="ddd_telefone_1"></span>
+                        <span id="ddd_telefone_2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="../controllers/consulta-cnpj.js"></script>
 </body>

@@ -135,6 +135,26 @@ a{
   color: #fff;
 }
 
+.container-cnpj-infos{
+  outline: none;
+  padding: .7rem 4rem;
+  background: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.container-cnpj-infos span{
+  padding: 1rem;
+  border: 1px solid rgb(104, 150, 52);
+  border-radius: 9px;
+  color: #fff;
+}
+
 @media (max-width: 600px) {
 
   #menu{

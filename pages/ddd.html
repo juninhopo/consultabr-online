@@ -29,18 +29,28 @@
         </nav>
     </header>
     <main>
-        <div class="content-input">
-            <input id="dddinput" type="text" name="number" placeholder="Digite o DDD" maxlength="3" minlength="1">
-
-            <button type="submit" onclick="getDdd()">Pesquisar</button>
-        </div>
-
-        <div id="responseSubmit" class="container-baixo">
-            <span id="state"></span>
-            <span id="cities"></span>
-            1
-        </div>
+        <section>
+            <div class="container">
+                <div class="content-container-cep">
+                    <div class="content-container-cep-text">
+                        <h1>Consulta DDD</h1>
+                        <p>Encontre informações de um determinado DDD (Discagem Direta à Distância).
+                        </p>
+                    </div>
+                    <div class="content-input">
+                        <input id="dddinput" type="text" name="number" placeholder="Digite o DDD" maxlength="3" minlength="1">
+                    
+                        <button type="submit" onclick="getDdd()">Pesquisar</button>
+                    </div>
+                    
+                    <div id="responseSubmit" class="container-dd-infos">
+                        <span id="state"></span>
+                        <span id="cities"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
     <script src="../controllers/consulta-ddd.js"></script>
 </body>
