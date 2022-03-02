@@ -7,8 +7,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+  background: #202020;
+}
+
 :root{
-    --hue: rgb(27, 170, 22); 
+    --hue: rgb(27, 170, 22);
+    --fundo: #202020;
 }
 
 span{
@@ -17,6 +22,7 @@ span{
 
 a{
   text-decoration: none;
+  color: #fff;
 }
 
 #nav a{
@@ -25,6 +31,7 @@ a{
   transition: 0.4s;
   display: block;
   padding: .5rem;
+  color: #fff;
 }
 
 #nav a:hover{
@@ -32,23 +39,53 @@ a{
 }
 
 #header{
+  border-bottom: 1px solid #4e4e4e; 
   box-sizing: border-box;
   height: 70px;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e7e7e7;
+  background: var(--fundo);
+  color: #fff;
 }
 
 #menu{
   display: flex;
   list-style: none;
   gap: .5rem;
+  
 }
 
 #btn-mobile{
   display: none;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  height: 100vh;
+}
+
+.content-card{
+  width: 300px;
+  height: 300px;
+  background: rgb(104, 150, 52);
+  padding: 1rem;
+  color: #ffffffd8;
+  border-radius: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+.content-card:hover{
+  background: rgb(102, 163, 31);
+}
+
+.content-text-card-row{
+  padding-top: 3rem;
 }
 
 @media (max-width: 600px) {
@@ -59,7 +96,7 @@ a{
     width: 100%;
     top: 70px;
     right: 0;
-    background: #e7e7e7;
+    background: var(--fundo);
     height: 0px;
     transition: .6s;
     z-index: 1000;
@@ -118,4 +155,5 @@ a{
   #nav.active #hamburguer::before{
     transform: rotate(135deg);
   }
+
 }
