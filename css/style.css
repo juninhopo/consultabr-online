@@ -112,6 +112,7 @@ a{
   background: none;
   border-radius: 4px;
   color: #fff;
+  font-size: 16px;
   border: 1px solid rgb(104, 150, 52);
 }
 
@@ -205,6 +206,10 @@ a{
     flex-direction: column;
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .content-input input, button{
+    text-align: center;
   }
 
 }
