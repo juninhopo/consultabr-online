@@ -66,8 +66,7 @@ a{
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  height: 100vh;
+  margin-top: 5rem;
 }
 
 .content-card{
@@ -154,6 +153,11 @@ a{
 
   #nav.active #hamburguer::before{
     transform: rotate(135deg);
+  }
+
+  .container{
+    flex-direction: column;
+    margin-top: 5rem;
   }
 
 }
