@@ -215,7 +215,7 @@ a{
   }
 
   .container-cep-infos{
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 }
