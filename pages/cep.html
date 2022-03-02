@@ -11,31 +11,37 @@
 
 <body>
     <header id="header">
-        <h1>Consulta<span>BR</span></h1>
+        <a href="../index.html">
+            <h1>Consulta<span>BR</span></h1>
+        </a>
         <nav id="nav">
             <button id="btn-mobile" aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
             <ul id="menu">
-                <li><a href="">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="">Serviços</a></li>
                 <li><a href="">Documentario</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-            <div class="content-1">
-                <div class="container-text-cep">
-                    <div class="container-text-1">
-                        <h1>CEP</h1>
-                        <P>Busca por CEP com múltiplos providers de fallback.</P>
+    <main>
+        <section>
+            <div class="container">
+                <div class="content-container-cep">
+                    <div class="content-container-cep-text">
+                        <h1>Consulta CEP</h1>
+                        <p>Encontre informações de um determinado CEP (Código de
+                            Endereçamento Postal).
+                        </p>
                     </div>
                     <div class="content-input">
-                        <input id="cepinput" type="text" name="number" placeholder="Digite um CEP" maxlength="8" minlength="8">
-                        
+                        <input id="cepinput" type="text" name="number" placeholder="Digite um CEP" maxlength="8"
+                            minlength="8">
+    
                         <button type="submit" onclick="getCep()">Pesquisar</button>
                     </div>
-                    <div id="responseSubmit" class="container-baixo">
+                    <div id="responseSubmit" class="container-cep-infos">
                         <span id="cep"></span>
                         <span id="estado"></span>
                         <span id="cidade"></span>
@@ -44,8 +50,10 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+    </main>
 
     <script src="../controllers/consulta-cep.js"></script>
 
 </body>
+

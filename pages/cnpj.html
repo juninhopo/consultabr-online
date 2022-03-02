@@ -1,27 +1,59 @@
-<div class="content-input">
-    <input id="cnpjinput" type="text" name="number" placeholder="Digite o CNPJ" maxlength="14" minlength="14">
-    
-    <button type="submit" onclick="getCnpj()">Pesquisar</button>
-</div>
+<!DOCTYPE html>
+<html lang="pt_BR">
 
-<div id="responseSubmit" class="container-baixo">
-    <span id="cnpj"></span>
-    <span id="razao_social"></span>
-    <span id="nome_fantasia"></span>
-    <span id="descricao_situacao_cadastral"></span>
-    <span id="data_inicio_atividade"></span>
-    <span id="cnae_fiscal"></span>
-    <span id="cnae_fiscal_descricao"></span>
-    <span id="descricao_tipo_logradouro"></span>
-    <span id="logradouro"></span>
-    <span id="numero"></span>
-    <span id="complemento"></span>
-    <span id="bairro"></span>
-    <span id="cep"></span>
-    <span id="uf"></span>
-    <span id="municipio"></span>
-    <span id="ddd_telefone_1"></span>
-    <span id="ddd_telefone_2"></span>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5245198198215344"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ConsultaBR</title>
 
-<script src="../controllers/consulta-cnpj.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html">
+            <h1>Consulta<span>BR</span></h1>
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="./pages/documentario.html">Documentario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-input">
+            <input id="cnpjinput" type="text" name="number" placeholder="Digite o CNPJ" maxlength="14" minlength="14">
+
+            <button type="submit" onclick="getCnpj()">Pesquisar</button>
+        </div>
+
+        <div id="responseSubmit" class="container-baixo">
+            <span id="cnpj"></span>
+            <span id="razao_social"></span>
+            <span id="nome_fantasia"></span>
+            <span id="descricao_situacao_cadastral"></span>
+            <span id="data_inicio_atividade"></span>
+            <span id="cnae_fiscal"></span>
+            <span id="cnae_fiscal_descricao"></span>
+            <span id="descricao_tipo_logradouro"></span>
+            <span id="logradouro"></span>
+            <span id="numero"></span>
+            <span id="complemento"></span>
+            <span id="bairro"></span>
+            <span id="cep"></span>
+            <span id="uf"></span>
+            <span id="municipio"></span>
+            <span id="ddd_telefone_1"></span>
+            <span id="ddd_telefone_2"></span>
+        </div>
+    </main>
+    <script src="../controllers/consulta-cnpj.js"></script>
+</body>

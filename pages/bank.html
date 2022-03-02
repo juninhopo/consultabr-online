@@ -1,14 +1,49 @@
-<div class="content-input">
-    <input id="bankinput" type="text" name="number" placeholder="Digite o ISPB do Banco" maxlength="3" minlength="1">
-    
-    <button type="submit" onclick="getBank()">Pesquisar</button>
-</div>
+<!DOCTYPE html>
+<html lang="pt_BR">
 
-<div id="responseSubmit" class="container-baixo">
-    <span id="ispb"></span>
-    <span id="name"></span>
-    <span id="code"></span>
-    <span id="fullname"></span>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5245198198215344"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ConsultaBR</title>
 
-<script src="../controllers/consulta-bank.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html">
+            <h1>Consulta<span>BR</span></h1>
+        </a>
+        <nav id="nav">
+            <button id="btn-mobile" aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="./pages/documentario.html">Documentario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="content-input">
+            <input id="bankinput" type="text" name="number" placeholder="Digite o ISPB do Banco" maxlength="3"
+                minlength="1">
+
+            <button type="submit" onclick="getBank()">Pesquisar</button>
+        </div>
+
+        <div id="responseSubmit" class="container-baixo">
+            <span id="ispb"></span>
+            <span id="name"></span>
+            <span id="code"></span>
+            <span id="fullname"></span>
+        </div>
+    </main>
+
+    <script src="../controllers/consulta-bank.js"></script>
+</body>

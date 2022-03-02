@@ -72,7 +72,8 @@ a{
 .content-card{
   width: 300px;
   height: 300px;
-  background: rgb(104, 150, 52);
+  border: 1px solid rgb(104, 150, 52);
+  background: rgba(104, 150, 52, 0.692);
   padding: 1rem;
   color: #ffffffd8;
   border-radius: 4px;
@@ -85,6 +86,51 @@ a{
 
 .content-text-card-row{
   padding-top: 3rem;
+}
+
+.content-container-cep{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.content-container-cep-text{
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.content-input{
+  width: 100%;
+}
+
+.content-input input, button{
+  outline: none;
+  padding: .7rem 4rem;
+  background: none;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid rgb(104, 150, 52);
+}
+
+.content-input button{
+  cursor: pointer;
+  margin-bottom: 3rem;
+  margin-top: .5rem;
+}
+
+.container-cep-infos{
+  display: none;
+  gap: 3rem;
+}
+
+.container-cep-infos span{
+  padding: 2rem 1.5rem;
+  border: 1px solid rgb(104, 150, 52);
+  border-radius: 9px;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
@@ -166,5 +212,10 @@ a{
 @media (max-width: 1300px) {
   .container{
     flex-wrap: wrap;
+  }
+
+  .container-cep-infos{
+    display: flex;
+    flex-direction: column;
   }
 }
