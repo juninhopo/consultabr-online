@@ -48,13 +48,16 @@ a{
   align-items: center;
   background: var(--fundo);
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #menu{
   display: flex;
   list-style: none;
   gap: .5rem;
-  
 }
 
 #btn-mobile{
