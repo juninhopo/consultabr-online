@@ -43,6 +43,7 @@ a{
   box-sizing: border-box;
   height: 70px;
   padding: 1rem;
+  user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,6 +71,7 @@ a{
   align-items: center;
   gap: 2rem;
   margin-top: 5rem;
+  user-select: none;
 }
 
 .content-card{
