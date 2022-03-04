@@ -22,7 +22,6 @@ span{
 
 a{
   text-decoration: none;
-  color: #fff;
 }
 
 #nav a{
@@ -61,98 +60,39 @@ a{
   display: none;
 }
 
-.container{
-  display: flex;
+h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+.section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 1rem;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 5rem;
-
 }
 
-.content-card{
-  width: 300px;
-  height: 300px;
-  border: 1px solid rgb(104, 150, 52);
-  background: rgba(104, 150, 52, 0.692);
-  padding: 1rem;
-  color: #ffffffd8;
+.item{
+  background: #f7f7f7;
+  border: 10px solid #e7e7e7;
+  padding: 20px;
   border-radius: 4px;
-  transition: 0.2s ease-in-out;
 }
 
-.content-card:hover{
-  background: rgb(102, 163, 31);
-}
-
-.content-text-card-row{
-  padding-top: 3rem;
-}
-
-.content-container-cep{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.item a{
+  display: inline-block;
+  background: var(--hue);
+  text-decoration: none;
+  padding: 10px 20px;
   color: #fff;
-  flex-direction: column;
-}
-
-.content-container-cep-text{
-  font-size: 1.3rem;
-  margin-bottom: 3rem;
-}
-
-.content-input{
-  width: 100%;
-}
-
-.content-input input, button{
-  outline: none;
-  padding: .7rem 4rem;
-  background: none;
   border-radius: 4px;
-  color: #fff;
-  font-size: 16px;
-  border: 1px solid rgb(104, 150, 52);
+  transition: 0.4s;
+  margin-top: 1rem;
 }
 
-.content-input button{
-  cursor: pointer;
-  margin-bottom: 3rem;
-  margin-top: .5rem;
-}
-
-.container-cep-infos{
-  display: none;
-  gap: 3rem;
-}
-
-.container-cep-infos span{
-  padding: 2rem 1.5rem;
-  border: 1px solid rgb(104, 150, 52);
-  border-radius: 9px;
-  color: #fff;
-}
-
-.container-cnpj-infos{
-  outline: none;
-  padding: .7rem 4rem;
-  background: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 16px;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  display: none;
-}
-
-.container-cnpj-infos span{
-  padding: 1rem;
-  border: 1px solid rgb(104, 150, 52);
-  border-radius: 9px;
-  color: #fff;
+.item a:hover{
+  background: rgb(90, 231, 25);
 }
 
 @media (max-width: 600px) {
@@ -196,7 +136,6 @@ a{
   #hamburguer{
     border-top: 2px solid;
     width: 20px;
-    
   }
 
   #hamburguer::after, #hamburguer::before{
@@ -222,26 +161,15 @@ a{
   #nav.active #hamburguer::before{
     transform: rotate(135deg);
   }
-
-  .container{
-    flex-direction: column;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  .section{
+    display: grid;
+    grid-template-columns: 1fr;
   }
-
-  .content-input input, button{
-    text-align: center;
-  }
-
 }
 
-@media (max-width: 1300px) {
-  .container{
-    flex-wrap: wrap;
-  }
-
-  .container-cep-infos{
-    display: none;
-    flex-direction: column;
+@media (max-width: 920px) {
+  .section{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
