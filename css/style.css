@@ -50,6 +50,10 @@ a{
   color: #fff;
 }
 
+#header a{
+  color: #fff;
+}
+
 #menu{
   display: flex;
   list-style: none;
@@ -93,6 +97,94 @@ h2{
 
 .item a:hover{
   background: rgb(90, 231, 25);
+}
+
+.content-container-cep{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-container-cep-text{
+  color: #e7e7e7;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.content-input input, button{
+  outline: none;
+  background: none;
+  border: 1px solid var(--hue);
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container-cep-infos{
+  margin-top: 3rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-cep-infos span{
+  padding: 1rem;
+  border: 1px solid var(--hue);
+  margin: 1rem;
+  border-radius: 4px;
+}
+
+.container-cnpj-infos{
+  margin-top: 3rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-cnpj-infos span{
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  border: 1px solid var(--hue);
+  margin: 1rem;
+  border-radius: 4px;
+}
+
+.container-dd-infos{
+  margin-top: 3rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-dd-infos span{
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid var(--hue);
+  margin: 1rem;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.container-banco-infos{
+  margin-top: 3rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-banco-infos span{
+  color: #fff;
+  display: flex;
+  padding: 1rem;
+  border: 1px solid var(--hue);
+  margin: 1rem;
+  border-radius: 4px;
 }
 
 @media (max-width: 600px) {
@@ -161,15 +253,36 @@ h2{
   #nav.active #hamburguer::before{
     transform: rotate(135deg);
   }
+  
   .section{
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  .container-cnpj-infos{
+    flex-direction: column;
+  }
+
+  .container-cnpj-infos span{
+    width: 250px;
+  }
+
+  .container-dd-infos span{
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  .container-banco-infos{
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1000px) {
   .section{
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .container-cnpj-infos{
+    flex-direction: column;
   }
 }
